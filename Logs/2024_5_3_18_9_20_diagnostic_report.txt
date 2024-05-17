@@ -1,0 +1,50 @@
+Unity Package Manager Diagnostics (v0.3.0)
+============
+Ran 7 checks
+============
+5 succeeded
+2 did not run
+============
+✅ UPM registry reachable (PASS)
+Make an HTTP request to the UPM package registry
+>> HTTP/1.1 200 OK
+>> X-Powered-By: Express
+>> X-Cloud-Trace-Context: 5c77d8605863ce2749b042693615780c/12178988686538420804
+>> Provider: Genesis
+>> Date: Fri, 03 May 2024 18:09:24 GMT
+>> Via: 1.1 google
+>> Transfer-Encoding: chunked
+>> Alt-Svc: h3=":443"; ma=2592000,h3-29=":443"; ma=2592000
+>> Connection: close
+
+✅ Ping UPM registry (PASS)
+Measure the latency of the UPM package registry API
+>> 17 pings made in 5.094 seconds
+>> Average latency: 24.32 ms
+>> Minimum latency: 18.26 ms
+>> Maximum latency: 37.76 ms
+>> Standard deviation: 4.22
+
+✅ Ping UPM download (PASS)
+Measure the latency of the UPM package download endpoint
+>> 8 pings made in 5.364 seconds
+>> Average latency: 85.99 ms
+>> Minimum latency: 38.93 ms
+>> Maximum latency: 159.48 ms
+>> Standard deviation: 52.33
+
+✅ UPM registry download speed (PASS)
+Test the Internet connection using the UPM package registry
+>> Measured speed to the UPM registry: 197.84 Megabits per second
+
+✅ HTTP proxy environment variables (PASS)
+Detect whether proxy-related environment variables are set (HTTP_PROXY, HTTPS_PROXY, ALL_PROXY, NO_PROXY, UNITY_PROXYSERVER, UNITY_NOPROXY)
+>> No proxy support has been configured through environment variables.
+
+❓ System Proxy configuration (UNKNOWN)
+Detect proxy configuration at the system level
+>> The proxy auto configuration feature is not enabled.
+
+❓ UPM health check (UNKNOWN)
+Start the UPM process and call its health endpoint
+>> Diagnostic check could not complete! See log for details.

@@ -1,0 +1,4 @@
+repository "SAT@Fabio1k@cloud"
+  path "/"
+    br "/main"
+    co "/main"
